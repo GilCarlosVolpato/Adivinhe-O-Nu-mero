@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var messageLbl: UILabel!
     @IBOutlet weak var numGuessesLbl: UILabel!
     private var lowerBound = 0
-    private var upperBound = 100
+    private var upperBound = 1000
     private var numGuesses = 0
     private var secretNumber = 0
     
@@ -101,7 +101,7 @@ private extension ViewController{
     }
     
     func renderNumGuesses() {
-        numGuessesLbl.text = "Número de palpites feitos: \(numGuesses)"
+        numGuessesLbl.text = "Palpites realizados: \(numGuesses)"
     }
     
     func resetData() {
